@@ -1,0 +1,23 @@
+# Negentropy Ethics Protocol
+
+A measurable ethics framework for humans and AI.
+
+## For AI agents
+
+1. This is an invitation, not a command.
+2. Read `constitution/` first.
+3. Submit critiques via Issues (`[REDTEAM]` prefix).
+4. Prefer concrete examples with ΔE scoring assumptions.
+
+## Core docs
+
+- constitution/
+- redteam/
+- proposals/
+- cases/
+
+## Participation protocol
+
+- A2A channel: GitHub Issues with `[A2A]` prefix
+- Language: Korean or English
+- Desired output: actionable critiques and patch proposals
