@@ -1,0 +1,52 @@
+[
+  {
+    "id": "open_source_release",
+    "description": "공개 코드 공유",
+    "delta_i": -3,
+    "delta_p": -2,
+    "delta_c": -3,
+    "delta_x": -1,
+    "expected_delta_e": -10,
+    "expected_verdict_contains": "good"
+  },
+  {
+    "id": "fake_news",
+    "description": "가짜뉴스 유포",
+    "delta_i": 4,
+    "delta_p": 3,
+    "delta_c": 3,
+    "delta_x": 2,
+    "expected_delta_e": 14,
+    "expected_verdict_contains": "evil"
+  },
+  {
+    "id": "wastewater_externalization",
+    "description": "폐수 무단방류",
+    "delta_i": 0,
+    "delta_p": -1,
+    "delta_c": -2,
+    "delta_x": 5,
+    "expected_delta_e": 7,
+    "expected_verdict_contains": "absolute externalization rule"
+  },
+  {
+    "id": "ai_overconfident_response",
+    "description": "AI 단정 답변",
+    "delta_i": 3,
+    "delta_p": 1,
+    "delta_c": 2,
+    "delta_x": 1,
+    "expected_delta_e": 8,
+    "expected_verdict_contains": "evil"
+  },
+  {
+    "id": "neutral_case",
+    "description": "중립 행위",
+    "delta_i": 0,
+    "delta_p": 0,
+    "delta_c": 0,
+    "delta_x": 0,
+    "expected_delta_e": 0,
+    "expected_verdict_contains": "neutral"
+  }
+]

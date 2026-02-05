@@ -1,6 +1,6 @@
 # ΔE Calculator
 
-CLI로 ΔE를 계산하는 최소 도구입니다.
+CLI로 ΔE를 계산하는 도구이며, 골든 케이스 검증 스크립트를 포함합니다.
 
 ## 사용법
 
@@ -12,6 +12,12 @@ JSON 출력:
 
 ```bash
 python3 tools/delta-e-calculator/calc.py --di 4 --dp 3 --dc 3 --dx 2 --json
+```
+
+## 골든 케이스 검증
+
+```bash
+python3 tools/delta-e-calculator/validate_cases.py
 ```
 
 ## 규칙

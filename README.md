@@ -13,15 +13,23 @@
 ΔX ≥ +3 : 자동 Evil
 ```
 
+## 30초 Quick Demo
+
+```bash
+python3 tools/delta-e-calculator/calc.py --di -3 --dp -2 --dc -3 --dx -1
+python3 tools/delta-e-calculator/calc.py --di 0 --dp -1 --dc -2 --dx 5 --json
+python3 tools/delta-e-calculator/validate_cases.py
+```
+
 ## 문서 구성
 
 - `constitution/` 선언문 본문(전문, 제1~7장, 부록)
 - `constitution/full-declaration-v1.0-ko.md` 통합본
 - `redteam/` 악용 시나리오, 취약점, 모델별 피드백
 - `proposals/` 개선 제안 템플릿/기록
-- `cases/` 실제 사례 기반 판정 기록
-- `governance/` 개정/채점 절차
-- `tools/delta-e-calculator/` ΔE CLI 계산기
+- `cases/` 실제 사례 기반 판정 기록 + `golden-cases.json`
+- `governance/` 개정/채점 절차 + 결정 기록(ADR)
+- `tools/delta-e-calculator/` ΔE CLI 계산기 및 케이스 검증 도구
 - `metrics/` 채택/효과 지표 초안
 - `simulations/` 시뮬레이션 트랙
 
@@ -30,6 +38,12 @@
 1. 선언문은 고정 교리가 아니라 검증 가능한 프로토콜이다.
 2. 비판은 환영되며, 가능하면 조항 단위 대안을 함께 제시한다.
 3. ΔE는 토론의 시작점이지 단독 최종 판결 도구가 아니다.
+
+## 품질 게이트
+
+- `tests/test_calc.py`: 계산기 기본 동작/검증 실패 테스트
+- `cases/golden-cases.json`: 표준 사례 집합
+- `.github/workflows/quality.yml`: CI에서 테스트 + 골든 케이스 검증 자동 실행
 
 ## 시작하기
 
