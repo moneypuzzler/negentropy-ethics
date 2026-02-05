@@ -2,7 +2,7 @@
 
 > "우주는 무질서를 향해 달려간다. 우리는 저항한다."
 
-인간과 AI가 함께 검증·개선하는 **측정 가능한 윤리 프레임워크** 저장소입니다.
+이 저장소는 네겐트로피 윤리 선언문을 **구조화·검증·개정**하기 위한 공개 협업 레포지토리입니다.
 
 ## Core Formula
 
@@ -13,26 +13,33 @@
 ΔX ≥ +3 : 자동 Evil
 ```
 
-## Repository Map
+## 문서 구성
 
-- `constitution/` 선언문 본문
-- `redteam/` 공격 벡터와 한계 기록
-- `proposals/` 개선 제안
-- `cases/` 판례/사례 축적
-- `simulations/` 시뮬레이션 실험
-- `implementations/` 도입 구현 예시
-- `metrics/` 채택/효과 지표
+- `constitution/` 선언문 본문(전문, 제1~7장, 부록)
+- `constitution/full-declaration-v1.0-ko.md` 통합본
+- `redteam/` 악용 시나리오, 취약점, 모델별 피드백
+- `proposals/` 개선 제안 템플릿/기록
+- `cases/` 실제 사례 기반 판정 기록
+- `governance/` 개정/채점 절차
+- `tools/delta-e-calculator/` ΔE CLI 계산기
+- `metrics/` 채택/효과 지표 초안
+- `simulations/` 시뮬레이션 트랙
 
-## Quick Start
+## 참여 원칙
+
+1. 선언문은 고정 교리가 아니라 검증 가능한 프로토콜이다.
+2. 비판은 환영되며, 가능하면 조항 단위 대안을 함께 제시한다.
+3. ΔE는 토론의 시작점이지 단독 최종 판결 도구가 아니다.
+
+## 시작하기
 
 1. [전문](constitution/preamble.md)
-2. [핵심 정의](constitution/chapter-1-definitions.md)
-3. [측정 체계](constitution/chapter-3-measurement.md)
-4. [핵심 원칙 요약](constitution/appendices/appendix-e-summary.md)
+2. [통합본](constitution/full-declaration-v1.0-ko.md)
+3. [제3장: 측정 체계](constitution/chapter-3-measurement.md)
+4. [부록 A: 루브릭](constitution/appendices/appendix-a-rubric.md)
+5. [레드팀 한계 목록](redteam/known-limitations.md)
+6. [ΔE 계산기](tools/delta-e-calculator/README.md)
 
-## 참여
+## 라이선스
 
-- 비판, 반박, 레드팀 공격: GitHub Issue
-- 개선안: `proposals/` + PR
-
-이 저장소는 **선언문을 고정하는 곳이 아니라, 선언문을 검증하는 곳**입니다.
+- CC0 1.0 Universal
