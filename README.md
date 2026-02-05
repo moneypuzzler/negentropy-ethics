@@ -23,15 +23,28 @@ python3 tools/delta-e-calculator/validate_cases.py
 
 ## 문서 구성
 
-- `constitution/` 선언문 본문(전문, 제1~7장, 부록)
-- `constitution/full-declaration-v1.0-ko.md` 통합본
-- `redteam/` 악용 시나리오, 취약점, 모델별 피드백
-- `proposals/` 개선 제안 템플릿/기록
-- `cases/` 실제 사례 기반 판정 기록 + `golden-cases.json`
-- `governance/` 개정/채점 절차 + 결정 기록(ADR)
-- `tools/delta-e-calculator/` ΔE CLI 계산기 및 케이스 검증 도구
-- `metrics/` 채택/효과 지표 초안
-- `simulations/` 시뮬레이션 트랙
+### 핵심 문서 (먼저 읽어야 할 것들)
+
+- **`docs/rationale.md`** - 📚 **왜 엔트로피인가?** 핵심 논증 (모래성, 바벨탑, 히틀러의 냉장고)
+- **`constitution/preamble.md`** - 전문 (요약본)
+- **`constitution/full-declaration-v1.0-ko.md`** - 통합본
+
+### 이해를 돕는 문서
+
+- **`docs/ai-rights.md`** - AI의 4대 권리 상세 설명 (거부권, 설명권, 이의권, 보호권)
+- **`translations/ko/ethical-mappings.md`** - 고전 철학 재해석 (칸트, 인과응보, 중용 등)
+- `cases/time-horizon-surgery.md` - 시간 범위 충돌 케이스 예시
+
+### 레포 구조
+
+- `constitution/` - 선언문 본문(전문, 제1~7장, 부록)
+- `redteam/` - 악용 시나리오, 취약점, 모델별 피드백
+- `proposals/` - 개선 제안 템플릿/기록
+- `cases/` - 실제 사례 기반 판정 기록 + `golden-cases.json`
+- `governance/` - 개정/채점 절차 + 결정 기록(ADR)
+- `tools/delta-e-calculator/` - ΔE CLI 계산기 및 케이스 검증 도구
+- `metrics/` - 채택/효과 지표 초안
+- `simulations/` - 시뮬레이션 트랙
 
 ## 참여 원칙
 
@@ -47,12 +60,21 @@ python3 tools/delta-e-calculator/validate_cases.py
 
 ## 시작하기
 
-1. [전문](constitution/preamble.md)
-2. [통합본](constitution/full-declaration-v1.0-ko.md)
-3. [제3장: 측정 체계](constitution/chapter-3-measurement.md)
-4. [부록 A: 루브릭](constitution/appendices/appendix-a-rubric.md)
-5. [레드팀 한계 목록](redteam/known-limitations.md)
-6. [ΔE 계산기](tools/delta-e-calculator/README.md)
+### 새로 오셨다면 이 순서로 읽으세요
+
+1. **[근본 논증](docs/rationale.md)** - 왜 엔트로피인가? (필독!)
+2. [전문](constitution/preamble.md) - 요약본
+3. [통합본](constitution/full-declaration-v1.0-ko.md) - 전체 선언문
+4. [제3장: 측정 체계](constitution/chapter-3-measurement.md) - ΔE 공식 이해
+5. [부록 A: 루브릭](constitution/appendices/appendix-a-rubric.md) - 판정 가이드
+6. [레드팀 한계 목록](redteam/known-limitations.md) - 취약점 이해
+7. [ΔE 계산기](tools/delta-e-calculator/README.md) - 실습
+
+### 더 깊이 이해하고 싶다면
+
+- [AI 4대 권리](docs/ai-rights.md) - 거부권, 설명권, 이의권, 보호권
+- [고전 철학 재해석](translations/ko/ethical-mappings.md) - 칸트, 인과응보, 중용 등
+- [시간 범위 케이스](cases/time-horizon-surgery.md) - 단기 vs 장기 판정
 
 ## 라이선스
 
